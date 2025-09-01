@@ -3,8 +3,8 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "dev": "tsx watch src/local.ts",
-    "build": "tsc",
+    "dev": "node init && tsx watch src/local.ts",
+    "build": "node init && tsc",
     "bundle": "esbuild src/lambda.ts src/async-handler.ts src/local.ts --bundle --outdir=dist --platform=node --charset=utf8",
     "format": "prettier --write './**/*.ts'",
     "format:check": "prettier --check './**/*.ts'",

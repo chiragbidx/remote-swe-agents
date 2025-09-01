@@ -5,7 +5,7 @@
     "cdk": "bin/cdk.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "watch": "tsc -w",
     "test": "jest",
     "format": "prettier --write './**/*.ts'",
